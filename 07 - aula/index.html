@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula 7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NutriCÃO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Navbar text with an inline element
+                </span>
+            </div>
+        </div>
+    </nav>
+    <h1>Entre em contato!</h1>
+    <form action="salvar.php" method="post" enctype="multipart/form-data">
+        <label for="estado">Estado:</label>
+        <Select id="estado" name="estado" class="form-select" 
+        aria-label="Default select example">
+            <option value="1">Selecione</option>
+            <option value="2">São Paulo</option>
+            <option value="3">Minas Gerais</option>
+        </Select>
+        <input type="checkbox" id="bicicleta" name="bicicleta" value="Bike">
+        <label for="bicicleta"> Eu tenho uma bicicleta</label><br>
+        <br><input type="checkbox" id="carro" name="carro" value="Car" checked>
+        <label for="carro"> Eu tenho um carro</label><br>
+        <br> <br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <br> <br>
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" placeholder="Nome" id="nome" class="form-control">
+        <label for="data_atendimento">Data de atendimento:</label>
+        <input type="date" placeholder="Data de atendimento" id="data_atendimento" class="form-control">
+        <label for="hora_atendimento">Hora de atendimento:</label>
+        <input type="time" placeholder="Hora de atendimento" id="hora_atendimento" class="form-control">
+        <input type="datetime-local" id="data_hora_atendimento" class="form-control">
+        <label for="email">Digite seu e-mail:</label>
+        <input type="email" placeholder="E-mail" id="email" class="form-control">
+        <label for="telefone">Digite seu telefone:</label>
+        <input type="tel" placeholder="Telefone" id="telefone" class="form-control">
+        <label for="mensagem">Digite sua mensagem:</label>
+        <textarea placeholder="Mensagem" id="mensagem" class="form-control"></textarea>
+        <label for="anexo">Anexar arquivo:</label>
+        <input type="file" id="anexo" class="form-control">
+        <br />
+        
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Limpar</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
