@@ -1,0 +1,37 @@
+/*Componente*/
+body {
+    /*propriedade: valor*/
+    background-color: rgb(126, 179, 161);
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: rgb(110, 21, 21);
+}
+
+/*Vai enviar para o todos os componentes*/
+p, h1, h2, h3,  h6 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/*Declaração para todo o site 
+*{
+   text-align: center;
+   color: rgb(0, 0, 0);
+}*/
+
+/*componente com indentificador*/
+#carousel {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Alterar a classe*/
+.carousel-item {
+    height: 400px;
+}
